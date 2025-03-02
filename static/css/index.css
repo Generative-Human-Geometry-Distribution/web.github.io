@@ -155,3 +155,31 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+/* 设置 video-list 的样式 */
+.video-list {
+  display: flex;
+  flex-direction: column; /* 按列排列每个视频 */
+  justify-content: flex-start; /* 视频从顶部开始排列 */
+  align-items: center; /* 视频居中显示 */
+  width: 100%; /* 父容器宽度占满屏幕 */
+  height: 100vh; /* 父容器高度占满屏幕 */
+  padding: 0; /* 清除默认内边距 */
+  margin: 0; /* 清除默认外边距 */
+  box-sizing: border-box; /* 包括内外边距计算在内 */
+}
+
+/* 每个视频项 */
+.video-item {
+  width: 100%; /* 视频宽度为 100% */
+  max-width: 800px; /* 最大宽度限制为 800px */
+  margin: 10px 0; /* 视频间距 */
+  display: flex;
+  justify-content: center; /* 视频水平居中 */
+}
+
+/* 视频样式 */
+video {
+  width: 100%; /* 视频宽度为容器宽度 */
+  height: auto; /* 保持视频原始宽高比 */
+  object-fit: contain; /* 保证视频内容完整显示 */
+}
